@@ -3,90 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiendita Chida | ¡Lo mejor cerca de ti!</title>
+    <title>Executive Merchant Dashboard | Tiendita Chida</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif-luxury { font-family: 'Cinzel', serif; }
+    </style>
 </head>
-<body class="bg-amber-50/40 text-gray-800 antialiased font-sans">
+<body class="bg-[#F4F7F6] text-[#2C3E50] antialiased tracking-wide">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="text-2xl font-black tracking-wider text-gray-900">
-                🏪 Tiendita<span class="text-orange-500">Chida</span>
-            </div>
-            
-            <nav class="hidden md:flex space-x-8 font-semibold">
-                <a href="#" class="text-orange-500 border-b-2 border-orange-500 pb-1">Inicio</a>
-                <a href="#" class="text-gray-500 hover:text-orange-500 transition duration-300">Productos</a>
-                <a href="#" class="text-gray-500 hover:text-orange-500 transition duration-300">Ofertas 🔥</a>
-                <a href="#" class="text-gray-500 hover:text-orange-500 transition duration-300">Contacto</a>
-            </nav>
-
-            <div class="flex items-center space-x-4">
-                <a href="#" class="text-gray-600 hover:text-orange-500 relative p-2">
-                    <span class="absolute top-0 right-0 bg-orange-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
-                    🛒
-                </a>
-                <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 py-2.5 rounded-full shadow-md transition duration-300 transform hover:scale-105">
-                    Entrar
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <main class="max-w-7xl mx-auto px-6 py-12 md:py-24 flex flex-col-reverse md:flex-row items-center gap-12">
-        <div class="flex-1 text-center md:text-left">
-            <span class="bg-orange-100 text-orange-600 font-bold px-4 py-1.5 rounded-full text-sm inline-block mb-4">
-                ✨ ¡Pide tu mandado desde casa!
-            </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
-                Todo lo que te gusta, <br>
-                <span class="text-orange-500 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">al precio más chido.</span>
-            </h1>
-            <p class="text-lg text-gray-600 leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">
-                La tiendita de la esquina, pero en tu pantalla. Fruta fresca, botanas, refrescos bien fríos y todo lo que te hace falta hoy mismo.
-            </p>
-            
-            <div class="bg-white p-2 rounded-2xl shadow-xl flex items-center max-w-md mx-auto md:mx-0 border border-gray-100">
-                <input type="text" placeholder="¿Qué se te antoja hoy? Ej. Papitas..." class="w-full px-4 py-3 text-gray-700 rounded-xl focus:outline-none bg-transparent">
-                <button class="bg-gray-900 hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition duration-300">
-                    Buscar
-                </button>
-            </div>
-        </div>
-
-        <div class="flex-1 w-full max-w-md md:max-w-none">
-            <img class="rounded-3xl shadow-2xl w-full object-cover aspect-[4/3] border-4 border-white" 
-                 src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=600" 
-                 alt="Abarrotes Tiendita Chida">
-        </div>
-    </main>
-
-    <section class="max-w-7xl mx-auto px-6 pb-24">
-        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center md:text-left">Explora por categorías 🛍️</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            
-            <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-300 border border-gray-100 cursor-pointer">
-                <span class="text-4xl block mb-3">🍎</span>
-                <h3 class="font-bold text-gray-800">Frutas y Verduras</h3>
-            </div>
-            
-            <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-300 border border-gray-100 cursor-pointer">
-                <span class="text-4xl block mb-3">🥤</span>
-                <h3 class="font-bold text-gray-800">Bebidas Frías</h3>
-            </div>
-            
-            <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-300 border border-gray-100 cursor-pointer">
-                <span class="text-4xl block mb-3">🍿</span>
-                <h3 class="font-bold text-gray-800">Botanas y Dulces</h3>
-            </div>
-            
-            <div class="bg-white p-6 rounded-2xl text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-300 border border-gray-100 cursor-pointer">
-                <span class="text-4xl block mb-3">🧼</span>
-                <h3 class="font-bold text-gray-800">Limpieza e Higiene</h3>
+    <div class="flex min-h-screen">
+        
+        <aside class="w-64 bg-[#E9EFEF] border-r border-[#D3E0E0] flex flex-col justify-between p-6 hidden md:flex">
+            <div>
+                <div class="mb-10">
+                    <p class="font-serif-luxury text-[10px] tracking-[0.25em] text-[#7F8C8D] uppercase">Private Label</p>
+                    <h2 class="font-serif-luxury text-lg font-bold tracking-widest text-[#1E272E]">TIENDITA <span class="font-light text-[#57606F]">CHIDA</span></h2>
+                </div>
+                
+                <nav class="space-y-1">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2.5 bg-[#1E272E] text-[#F4F7F6] rounded-none text-xs font-medium tracking-widest uppercase transition">
+                        <span>📊</span> <span>Panel General</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2.5 text-[#57606F] hover:bg-[#D3E0E0] hover:text-[#1E272E] rounded-none text-xs font-medium tracking-widest uppercase transition">
+                        <span>🛒</span> <span>Órdenes</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2.5 text-[#57606F] hover:bg-[#D3E0E0] hover:text-[#1E272E] rounded-none text-xs font-medium tracking-widest uppercase transition">
+                        <span>📦</span> <span>Inventario Selecto</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2.5 text-[#57606F] hover:bg-[#D3E0E0] hover:text-[#1E272E] rounded-none text-xs font-medium tracking-widest uppercase transition">
+                        <span>👥</span> <span>Clientes VIP</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-2.5 text-[#57606F] hover:bg-[#D3E0E0] hover:text-[#1E272E] rounded-none text-xs font-medium tracking-widest uppercase transition">
+                        <span>💎</span> <span>Club Privado</span>
+                    </a>
+                </nav>
             </div>
 
-        </div>
-    </section>
+            <div class="border-t border-[#D3E0E0] pt-4 flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-none bg-[#57606F] flex items-center justify-center text-white font-light text-xs tracking-wider">
+                    M
+                </div>
+                <div>
+                    <p class="text-xs font-medium tracking-wider text-[#1E272E]">M. Alarcón</p>
+                    <p class="text-[9px] text-[#7F8C8D] tracking-widest uppercase font-semibold">Director de Curaduría</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-6 md:p-10 max-w-7xl mx-auto w-full space-y-8">
+            
+            <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <div>
+                    <p class="text-[10px] font-bold tracking-[0.3em] text-[#7F8C8D] uppercase mb-1">Administración Principal</p>
+                    <h1 class="font-serif-luxury text-2xl md:text-3xl font-medium text-[#1E272E] tracking-wider">CONTROL DE BOUTIQUE</h1>
+                </div>
+                <div class="relative w-full sm:w-auto">
+                    <input type="text" placeholder="Buscar producto, SKU o cliente..." 
+                           class="bg-[#E9EFEF] text-xs text-[#1E272E] placeholder-[#7F8C8D] tracking-wider rounded-none pl-10 pr-4 py-2.5 w-full sm:w-64 border-b border-transparent focus:outline-none focus:border-[#57606F] transition">
+                    <span class="absolute left-3 top-3 text-xs opacity-60">🔍</span>
+                </div>
+            </header>
+
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-none border-l-2 border-[#57606F] shadow-sm">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#7F8C8D] mb-1">Ventas del Día</p>
+                    <p class="font-serif-luxury text-xl font-bold text-[#1E272E] tracking-widest">$42,850.00</p>
+                    <span class="text-[9px] tracking-wider text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded-none font-medium mt-2 inline-block">↑ 12% vs ayer</span>
+                </div>
+                <div class="bg-white p-6 rounded-none border-l-2 border-[#95A5A6] shadow-sm">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#7F8C8D] mb-1">Ticket Promedio</p>
+                    <p class="font-serif-luxury text-xl font-bold text-[#1E272E] tracking-widest">$3,410.00</p>
+                    <span class="text-[9px] tracking-wider text-[#57606F] bg-[#E9EFEF] px-1.5 py-0.5 font-medium mt-2 inline-block">Mercado Premium</span>
+                </div>
+                <div class="bg-white p-6 rounded-none border-l-2 border-[#1E272E] shadow-sm">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#7F8C8D] mb-1">Órdenes Pendientes</p>
+                    <p class="font-serif-luxury text-xl font-bold text-[#1E272E] tracking-widest">07 <span class="text-xs font-sans font-light tracking-normal text-[#7F8C8D]">por enviar</span></p>
+                    <span class="text-[9px] tracking-wider text-amber-700 bg-amber-50 px-1.5 py-0.5 font-medium mt-2 inline-block">3 Prioritarias</span>
+                </div>
+                <div class="bg-[#2C3E50] p-6 rounded-none text-[#F4F7F6] shadow-md">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#BDC3C7] mb-1">Membresías Activas</p>
+                    <p class="font-serif-luxury text-xl font-bold tracking-widest">148 <span class="text-xs font-sans font-light tracking-normal text-[#BDC3C7]">Socios</span></p>
+                    <span class="text-[9px] tracking-wider text-[#2C3E50] bg-[#F4F7F6] px-1.5 py-0.5 font-semibold mt-2 inline-block">Cupo limitado</span>
+                </div>
+            </section>
+
+            <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <div class="lg:col-span-2 bg-white p-6 rounded-none border border-[#E9EFEF] flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif-luxury text-xs font-bold tracking-widest text-[#1E272E] uppercase mb-1">Rendimiento Mensual</h3>
+                        <p class="text-[11px] text-[#7F8C8D] mb-6">Ingresos expresados en miles de pesos</p>
+                    </div>
+                    
+                    <div class="flex items-end justify-between h-48 pt-4 border-b border-[#E9EFEF] px-4">
+                        <div class="flex flex-col items-center w-1/6 group">
+                            <div class="w-8 bg-[#D3E0E0] group-hover:bg-[#57606F] transition-all duration-300 h-24"></div>
+                            <span class="text-[10px] text-[#7F8C8D] mt-2">Ene</span>
+                        </div>
+                        <div class="flex flex-col items-center w-1/6 group">
+                            <div class="w-8 bg-[#D3E0E0] group-hover:bg-[#57606F] transition-all duration-300 h-32"></div>
+                            <span class="text-[10px] text-[#7F8C8D] mt-2">Feb</span>
+                        </div>
+                        <div class="flex flex-col items-center w-1/6 group">
+                            <div class="w-8 bg-[#D3E0E0] group-hover:bg-[#57606F] transition-all duration-300 h-20"></div>
+                            <span class="text-[10px] text-[#7F8C8D] mt-2">Mar</span>
+                        </div>
+                        <div class="flex flex-col items-center w-1/6 group">
+                            <div class="w-8 bg-[#57606F] h-40"></div>
+                            <span class="text-[10px] text-[#1E272E] font-medium mt-2">Abr</span>
+                        </div>
+                        <div class="flex flex-col items-center w-1/6 group">
+                            <div class="w-8 bg-[#E9EFEF] border border-dashed border-[#57606F] h-28"></div>
+                            <span class="text-[10px] text-[#7F8C8D] mt-2">May</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-none border border-[#E9EFEF] flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif-luxury text-xs font-bold tracking-widest text-[#1E272E] uppercase mb-1">Reserva Crítica</h3>
+                        <p class="text-[11px] text-[#7F8C8D] mb-4">Productos exclusivos próximos a agotarse</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs font-medium text-[#1E272E] mb-1">
+                                <span>Mezcal Ancestral Tobalá (Oax)</span>
+                                <span class="text-red-600">2 pzas</span>
+                            </div>
+                            <div class="w-full bg-[#F4F7F6] h-1">
+                                <div class="bg-red-500 h-1" style="width: 15%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-medium text-[#1E272E] mb-1">
+                                <span>Corte Wagyu Cross Duranguense</span>
+                                <span class="text-amber-600">5 pzas</span>
+                            </div>
+                            <div class="w-full bg-[#F4F7F6] h-1">
+                                <div class="bg-amber-500 h-1" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-medium text-[#1E272E] mb-1">
+                                <span>Queso de Oveja Maduro (Qro)</span>
+                                <span class="text-[#2C3E50]">8 pzas</span>
+                            </div>
+                            <div class="w-full bg-[#F4F7F6] h-1">
+                                <div class="bg-[#2C3E50] h-1" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w-full mt-6 bg-[#E9EFEF] hover:bg-[#D3E0E0] text-[#1E272E] text-[10px] font-bold tracking-widest uppercase py-2.5 transition">
+                        Ver Inventario Completo
+                    </button>
+                </div>
+
+            </section>
+
+            <section class="bg-white p-6 rounded-none border border-[#E9EFEF]">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-serif-luxury text-sm font-bold tracking-widest text-[#1E272E] uppercase">Órdenes de Compra Recientes</h3>
+                    <a href="#" class="text-[10px] font-bold tracking-widest text-[#57606F] uppercase border-b border-[#57606F] pb-0.5 hover:text-[#1E272E] transition">Ver todas</a>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs tracking-wider">
+                        <thead>
+                            <tr class="border-b border-[#E9EFEF] text-[#7F8C8D] uppercase">
+                                <th class="pb-3 font-semibold">ID Órden</th>
+                                <th class="pb-3 font-semibold">Cliente VIP</th>
+                                <th class="pb-3 font-semibold">Artículos</th>
+                                <th class="pb-3 font-semibold">Estado</th>
+                                <th class="pb-3 font-semibold text-right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-[#F4F7F6] text-[#2C3E50]">
+                            <tr>
+                                <td class="py-4 font-mono font-medium text-[#1E272E]">#TC-2026-091</td>
+                                <td class="py-4 font-medium">Carlos Slim H.</td>
+                                <td class="py-4 text-[#7F8C8D]">Cesta de Trufas & Mezcal</td>
+                                <td class="py-4"><span class="text-amber-700 bg-amber-50 px-2 py-0.5 rounded-none font-medium">Por Despachar</span></td>
+                                <td class="py-4 text-right font-semibold text-[#1E272E]">$8,450.00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-mono font-medium text-[#1E272E]">#TC-2026-090</td>
+                                <td class="py-4 font-medium">Sofia Torres</td>
+                                <td class="py-4 text-[#7F8C8D]">Café de Especialidad x4 Kg</td>
+                                <td class="py-4"><span class="text-blue-700 bg-blue-50 px-2 py-0.5 rounded-none font-medium">En Ruta</span></td>
+                                <td class="py-4 text-right font-semibold text-[#1E272E]">$1,520.00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-mono font-medium text-[#1E272E]">#TC-2026-089</td>
+                                <td class="py-4 font-medium">Eduardo Prieto</td>
+                                <td class="py-4 text-[#7F8C8D]">Vinos de Guarda Reserva E.</td>
+                                <td class="py-4"><span class="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-none font-medium">Entregado</span></td>
+                                <td class="py-4 text-right font-semibold text-[#1E272E]">$14,200.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
 
 </body>
 </html>
