@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { NewProduct } from '../../components/newProduct/newProduct';
 
 @Component({
   selector: 'app-products',
-  imports: [],
+  imports: [NewProduct],
   templateUrl: './products.html',
   styles: `
     :host {
@@ -11,4 +12,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Products {}
+export class Products {
+  isModalOpen = false;
+
+  handleProductSave() {
+    console.log('Guardando producto...');
+  }
+}

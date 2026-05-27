@@ -22,10 +22,16 @@
         />
 
         <button
+        (click)="isModalOpen = true"
           class="rounded-xl bg-zinc-100 px-5 py-2.5 text-sm font-medium text-zinc-900 transition hover:bg-white"
         >
           Nuevo Producto
         </button>
+        <app-new-product 
+        [isOpen]="isModalOpen" 
+        (close)="isModalOpen = false"
+        (save)="handleProductSave()">
+      </app-new-product>
       </div>
 
     </div>
